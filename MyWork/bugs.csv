@@ -1,0 +1,476 @@
+﻿Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Attachment,Attachment,Attachment,Attachment,Custom field (Actual end),Custom field (Actual start),Custom field (Approvals),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Development),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Focus Areas),Custom field (Goals),Custom field (Impact),Custom field (Issue color),Custom field (Locked forms),Custom field (Open forms),Custom field (Project overview key),Custom field (Project overview status),Custom field (Rank),Custom field (Request Type),Custom field (Sentiment),Custom field (Start date),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Total forms),Custom field (Vulnerability),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Custom field (Категория),Comment,Status Category,Status Category Changed
+Форма зворотного зв’язку приймає некоректні дані без валідації,ZVIR-3,10221,Bug,To Do,ZVIR,Zviropolis,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,High,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,11/Feb/26 8:41 PM,11/Feb/26 8:41 PM,,,,0,"h3. Description
+
+Форма дозволяє відправити запит із довільним текстом замість номера телефону.
+Відсутня перевірка формату введених даних.
+
+h3. Preconditions
+
+Відкрита форма зворотного дзвінка.
+
+h3. STR:
+
+# Відкрити [https://zpolis.com.ua/|https://zpolis.com.ua/|smart-link] 
+# Натиснути кнопку зворотного зв’язку / дзвінка.
+# У полі номера телефону ввести довільний текст або символи.
+# Натиснути кнопку відправки.
+
+h3. AR:
+
+Форма приймає некоректні дані та показує повідомлення про успішну відправку.
+
+h3. ER:
+
+Форма повинна перевіряти формат номера телефону та показувати помилку при некоректному введенні.","Android Emulator
+Browser: Chrome (mobile)
+
+[https://zpolis.com.ua/|https://zpolis.com.ua/|smart-link] ",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,11/Feb/26 8:40 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-11 193813.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10222,11/Feb/26 8:40 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-11 193906.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10223,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@737ce47f,,,,,,,,,,,,,,,,0|i00067:,,,11/Feb/26 12:00 AM,,,,,,,,,,,,,To Do,11/Feb/26 8:41 PM
+Невідповідність мови інтерфейсу після натискання кнопки «Подзвонити»,ZVIR-2,10220,Bug,To Do,ZVIR,Zviropolis,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Low,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,11/Feb/26 8:37 PM,11/Feb/26 8:37 PM,11/Feb/26 8:41 PM,,,0,"h3. Description
+
+При виборі російської мови сайту після натискання кнопки *«Позвонить»* відкривається форма українською мовою, що порушує узгодженість локалізації.
+
+h3. Preconditions
+
+На сайті обрано російську мову.
+
+h3. STR:
+
+# Відкрити *zveropolis.site*.
+# Перемкнути мову сайту на російську.
+# Натиснути кнопку *«Позвонить»* у хедері.
+
+h3. AR:
+
+Форма відображається українською мовою.
+
+h3. ER:
+
+Форма повинна відображатися російською мовою відповідно до обраної локалізації.","Android Emulator
+Browser: Chrome (mobile)",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,11/Feb/26 8:36 PM;e4457d18-b369-48c9-923a-997c53c725c8;2.webm;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10219,11/Feb/26 8:36 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-11 203544.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10218,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@3df16f98,,,,,,,,,,,,,,,,0|i0005z:,,,11/Feb/26 12:00 AM,,,,,,,,,,,,,To Do,11/Feb/26 8:37 PM
+Зображення на головній сторінці не завантажуються або завантажуються дуже довго,ZVIR-1,10219,Bug,To Do,ZVIR,Zviropolis,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Medium,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,11/Feb/26 8:29 PM,11/Feb/26 8:29 PM,,,,0,"h3. Description
+
+Після відкриття головної сторінки сайту частина зображень відображається некоректно (порожні блоки або нескінченне завантаження).
+Проблема спостерігається тривалий час навіть при стабільному інтернет-з’єднанні.
+
+h3. Preconditions
+
+Користувач відкрив сайт  [https://zpolis.com.ua/|https://zpolis.com.ua/|smart-link]  у мобільному браузері на емуляторі Android.
+
+h3. STR
+
+# Відкрити браузер у емуляторі Android.
+# Перейти на сайт [https://zpolis.com.ua/|https://zpolis.com.ua/|smart-link] 
+# Дочекатися повного завантаження сторінки.
+# Переглянути зображення на головній сторінці.
+
+h3. AR:
+
+Деякі зображення не завантажуються або завантажуються дуже довго.
+
+h3. ER:
+
+Усі зображення повинні завантажуватися швидко та відображатися коректно.","Android Emulator
+Browser: Chrome (mobile)",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,11/Feb/26 8:28 PM;e4457d18-b369-48c9-923a-997c53c725c8;untitled.webm;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10214,11/Feb/26 8:28 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-11 192257.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10215,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5531d926,,,,,,,,,,,,,,,,0|i0005r:,,,11/Feb/26 12:00 AM,,,,,,,,,,,,,To Do,11/Feb/26 8:29 PM
+Зображення на сторінках відображаються розмитими та пікселізованими,VET-6,10186,Bug,To Do,VET,Vetclinic,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Medium,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,11/Feb/26 1:51 PM,11/Feb/26 1:51 PM,,,,0,"h3. Preconditions
+
+Відкрити сторінки «Головна» та «Інформація».
+
+[https://dpcozt.com.ua/|https://dpcozt.com.ua/|smart-link] 
+
+h3. STR:
+
+# Переглянути головний банер.
+# Перейти у розділ «Інформація».
+
+[https://dpcozt.com.ua/category/zagalna-informacziya/|https://dpcozt.com.ua/category/zagalna-informacziya/|smart-link]  
+
+# Переглянути зображення у списку статей та всередині статті.
+
+h3. AR:
+
+Зображення виглядають розмитими, з пікселізацією та поганою якістю.
+
+h3. ER:
+
+Зображення повинні бути чіткими та адаптованими до мобільного екрану.","iPhone 13, iOS, Safari / Google Chrome (mobile)
+
+[https://dpcozt.com.ua/|https://dpcozt.com.ua/|smart-link] 
+
+[https://dpcozt.com.ua/category/zagalna-informacziya/|https://dpcozt.com.ua/category/zagalna-informacziya/|smart-link] ",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,11/Feb/26 1:51 PM;e4457d18-b369-48c9-923a-997c53c725c8;photo_2026-02-11_12-23-15.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10179,11/Feb/26 1:51 PM;e4457d18-b369-48c9-923a-997c53c725c8;photo_2026-02-11_12-23-16 (3).jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10178,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@377ab1ca,,,,,,,,,,,,,,,,0|i0005j:,,,11/Feb/26 12:00 AM,,,,,,,,,,,,,To Do,11/Feb/26 1:51 PM
+Кнопка «Вгору» перекриває основний текст сторінки,VET-5,10185,Bug,To Do,VET,Vetclinic,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Low,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,11/Feb/26 1:43 PM,11/Feb/26 1:43 PM,11/Feb/26 7:54 PM,,26/Feb/26 12:00 AM,0,"h3. Preconditions
+
+Відкрити будь-яку сторінку зі статтею.
+
+[https://dpcozt.com.ua/litni-strupy-u-sobak-prychyny-likuvannya-ta-profilaktyka/|https://dpcozt.com.ua/litni-strupy-u-sobak-prychyny-likuvannya-ta-profilaktyka/|smart-link] 
+
+h3. STR:
+
+# Прокрутити сторінку вниз.
+# Звернути увагу на кнопку прокрутки «вгору».
+
+h3. AR:
+
+Кнопка перекриває частину тексту та заважає читанню.
+
+h3. ER:
+
+Кнопка не повинна перекривати контент сторінки.","iPhone 13, iOS, Safari / Google Chrome (mobile)",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,11/Feb/26 1:42 PM;e4457d18-b369-48c9-923a-997c53c725c8;photo_2026-02-11_12-23-16 (2).jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10175,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@1d2f6cfc,,,,,,,,,,,,,,,,0|i0005b:,,,,,,,,,,,,,,,,To Do,11/Feb/26 1:43 PM
+Повідомлення в полі пошуку відображається російською мовою на українській версії сайту.,VET-4,10184,Bug,To Do,VET,Vetclinic,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Low,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,11/Feb/26 1:35 PM,11/Feb/26 1:35 PM,11/Feb/26 1:36 PM,,11/Feb/26 12:00 AM,0,"*Preconditions:*
+Сайт відкритий українською мовою.
+
+[https://dpcozt.com.ua/|https://dpcozt.com.ua/|smart-link] 
+
+*STR:*
+
+Перейти в розділ “Послуги” або любий інший
+
+Встановити курсор у поле пошук
+
+З пустим полем натиснути кнопку “Пошук”
+
+*AR:*
+
+З’являється текст російською мовою. “Заполните это поле”
+
+*ER:*
+
+З’являється текст російською мовою.","iPhone 13, iOS 17, Safari / Chrome (mobile)
+
+[https://dpcozt.com.ua/category/blog/|https://dpcozt.com.ua/category/blog/|smart-link] ",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,11/Feb/26 1:35 PM;e4457d18-b369-48c9-923a-997c53c725c8;photo_2026-02-11_12-23-17 (2).jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10173,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@6494db05,,,,,,,,,,,,,,,,0|i00053:,,,,,,,,,,,,,,,,To Do,11/Feb/26 1:35 PM
+При відкритті розділу «Контакти» одночасно підсвічуються «Контакти» та «Інформація».,VET-3,10151,Bug,To Do,VET,Vetclinic,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Low,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,11/Feb/26 1:25 PM,11/Feb/26 1:25 PM,11/Feb/26 1:26 PM,,11/Feb/26 12:00 AM,0,"*Preconditions:*
+Відкрита головна сторінка сайту.
+
+*STR:*
+
+Відкрити сайт  [https://dpcozt.com.ua/|https://dpcozt.com.ua/|smart-link] 
+
+Натиснути пункт меню «Контакти» у футері.
+
+*AR:*
+
+Активними відображаються два пункти меню.
+
+*ER:*
+
+Активним має бути лише поточний розділ.","iPhone 13, iOS 17, Safari / Chrome (mobile)
+
+[https://dpcozt.com.ua/kontakty/|https://dpcozt.com.ua/kontakty/|smart-link] ",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,11/Feb/26 1:23 PM;e4457d18-b369-48c9-923a-997c53c725c8;photo_2026-02-11_12-23-16.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10171,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@21c26448,,,,,,,,,,,,,,,,0|i0004v:,,,11/Feb/26 12:00 AM,,,,,,,,,,,,,To Do,11/Feb/26 1:25 PM
+Світло-сірий текст статей має недостатній контраст із фоном і погано читається.,VET-2,10150,Bug,To Do,VET,Vetclinic,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Medium,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,11/Feb/26 1:16 PM,11/Feb/26 1:16 PM,11/Feb/26 1:23 PM,,,0,"Відкрита сторінка зі статтями на мобільному пристрої. 
+
+*STR:*
+
+# Перейти до розділу зі статтями.
+
+[https://dpcozt.com.ua/litni-strupy-u-sobak-prychyny-likuvannya-ta-profilaktyka/|https://dpcozt.com.ua/litni-strupy-u-sobak-prychyny-likuvannya-ta-profilaktyka/|smart-link] 
+
+# Переглянути основний текст.
+
+*AR:*
+
+Текст має низьку видимість, особливо при зміні яскравості екрана.
+
+*ER:*
+
+Контраст тексту повинен відповідати стандартам доступності (WCAG).","iPhone 13, iOS 17, Safari / Chrome (mobile)
+
+[https://dpcozt.com.ua/litni-strupy-u-sobak-prychyny-likuvannya-ta-profilaktyka/|https://dpcozt.com.ua/litni-strupy-u-sobak-prychyny-likuvannya-ta-profilaktyka/|smart-link] ",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,11/Feb/26 1:16 PM;e4457d18-b369-48c9-923a-997c53c725c8;photo_2026-02-11_12-23-37.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10169,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@313fef86,,,,,,,,,,,,,,,,0|i0004n:,,,,,,,,,,,,,,,,To Do,11/Feb/26 1:16 PM
+Текст на головному банері стає нечитабельним при повороті екрана мобільного пристрою в горизонтальний режим.,VET-1,10117,Bug,To Do,VET,Vetclinic,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Medium,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,11/Feb/26 12:33 PM,11/Feb/26 12:33 PM,11/Feb/26 1:18 PM,,,0,"*Preconditions:*
+Відкрита головна сторінка сайту на мобільному пристрої. [https://dpcozt.com.ua/|https://dpcozt.com.ua/|smart-link] 
+
+*STR:*
+
+# Відкрити головну сторінку сайту.
+# Повернути телефон у горизонтальний режим.
+
+*AR:*
+
+Текст на банері спотворюється та стає важким для читання.
+
+*ER:*
+
+Текст має коректно адаптуватися до горизонтальної орієнтації екрана.","iPhone 13, iOS 17, Safari / Chrome (mobile)
+
+[https://dpcozt.com.ua/|https://dpcozt.com.ua/|smart-link] ",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,11/Feb/26 12:31 PM;e4457d18-b369-48c9-923a-997c53c725c8;photo_2026-02-11_12-23-17.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10135,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@60c800b,,,,,,,,,,,,,,,,0|i0004f:,,,,,,,,,,,,,,,,To Do,11/Feb/26 12:33 PM
+Календар у формі запису відображається російською мовою для всіх мов інтерфейсу (UA/EN).,OX-5,10084,Bug,To Do,OX,Oxfordmedical,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Medium,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,07/Feb/26 10:49 PM,07/Feb/26 10:49 PM,07/Feb/26 10:58 PM,,07/Feb/26 12:00 AM,0,"Після зміни мови сайту (українська або англійська) календар у формі вибору дати/часу все одно залишається російською (назви днів/місяців та підказки).
+
+*STR:*
+
+# Відкрити сайт Oxford Medical.  [https://oxford-med.com.ua/ua/|https://oxford-med.com.ua/ua/|smart-link] 
+# Перемкнути мову інтерфейсу на українську або англійську.
+# Відкрити бургер-меню.
+# Натиснути «Записатися через кол-центр».
+# У полі «Бажана дата прийому» натиснути на іконку календаря.
+
+*Примітка:*
+Помилка також відтворюється при переході через вкладку
+«Відділення» → сторінка відділення → блок запису на прийом.","Windows 10, Chrome, Desktop
+URL: сайт Oxford Medical
+
+[https://oxford-med.com.ua/ua/zapysatys-cherez-kol-tsentr/|https://oxford-med.com.ua/ua/zapysatys-cherez-kol-tsentr/|smart-link] ",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,07/Feb/26 10:46 PM;e4457d18-b369-48c9-923a-997c53c725c8;Приватна клініка Оксфорд Медікал - медичні послуги в Києві в Oxford Medical - Google Chrome 2026-02-07 22-45-35.mp4;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10100,07/Feb/26 10:48 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-07 224800.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10101,07/Feb/26 10:49 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-07 224837.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10099,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@60a2586f,,,,,,,,,,,,,,,,0|i00047:,,,,,,,,,,,,,,,,To Do,07/Feb/26 10:49 PM
+Немає зрозумілого способу вийти зі сторінки реєстрації,OX-4,10083,Bug,To Do,OX,Oxfordmedical,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Medium,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,07/Feb/26 10:04 PM,07/Feb/26 10:04 PM,,,,0,"Сторінка авторизації відкривається в новій вкладці без явного повернення.
+
+Користувач може не зрозуміти, як повернутися назад на сайт.
+
+STR:
+
+# Натиснути “Особистий кабінет”.
+# Відкривається нова вкладка.
+
+AR:
+
+Немає кнопки або пояснення до повернення знову на сайт.
+
+ER:
+
+Сторінка реєстрації повинна містити зрозумілий елемент навігації для повернення на основний сайт (кнопку «Назад», посилання на головну сторінку) або відкриватися в тій самій вкладці.","Windows 10, Chrome, Desktop
+URL: сайт Oxford Medical
+
+[https://portal-doctor.eleks.com/web/oxfordmedical/|https://portal-doctor.eleks.com/web/oxfordmedical/]",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,07/Feb/26 10:04 PM;e4457d18-b369-48c9-923a-997c53c725c8;Приватна клініка Оксфорд Медікал - медичні послуги в Києві в Oxford Medical - Google Chrome 2026-02-07 21-50-15.mp4;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10095,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@53a9f0d8,,,,,,,,,,,,,,,,0|i0003z:,,,,,,,,,,,,,,,,To Do,07/Feb/26 10:04 PM
+Неправильна логіка іконки “показати пароль”,OX-3,10082,Bug,To Do,OX,Oxfordmedical,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Medium,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,07/Feb/26 9:44 PM,07/Feb/26 9:44 PM,,,,0,"При відкритому оці пароль прихований, при перекресленому — відображається.
+
+STR:
+
+# Відкрити форму входу. [https://portal-doctor.eleks.com/web/oxfordmedical/#/login|https://portal-doctor.eleks.com/web/oxfordmedical/#/login]
+# Ввести пароль.
+# Натискати на іконку ока.
+
+AR:
+
+Логіка інверсна.
+
+ER:
+
+Відкрите око = пароль видно.
+Перекреслене око = пароль приховано.","Windows 10, Chrome, Desktop
+URL: сайт Oxford Medical
+
+[https://portal-doctor.eleks.com/web/oxfordmedical/|https://portal-doctor.eleks.com/web/oxfordmedical/]",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,07/Feb/26 9:43 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-07 214232.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10093,07/Feb/26 9:44 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-07 214257.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10092,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5e75619,,,,,,,,,,,,,,,,0|i0003r:,,,,,,,,,,,,,,,,To Do,07/Feb/26 9:44 PM
+Контент обрізається або зникає при ресайзі вікна.,OX-2,10081,Bug,To Do,OX,Oxfordmedical,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Medium,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,07/Feb/26 9:37 PM,07/Feb/26 9:45 PM,07/Feb/26 9:45 PM,,,0,"При зменшенні ширини браузера частина тексту та блоків стає невидимою або виходить за межі екрану.
+
+STR:
+
+# Відкрити сторінку. [https://oxford-med.com.ua/ua/|https://oxford-med.com.ua/ua/|smart-link] 
+# Зменшувати ширину вікна браузера.
+
+
+
+AR:
+
+Контент обрізається / зникає.
+
+ER:
+
+Адаптивна верстка повинна коректно перебудовуватися.","Windows 10, Chrome, Desktop
+URL: сайт Oxford Medical
+
+[https://oxford-med.com.ua/ua/|https://oxford-med.com.ua/ua/|smart-link] ",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,07/Feb/26 9:36 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-07 213356.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10088,07/Feb/26 9:36 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-07 213424.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10086,07/Feb/26 9:36 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-07 213504.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10089,07/Feb/26 9:37 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-07 213655.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10087,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2f942c3f,,,,,,,,,,,,,,,,0|i0003j:,,,,,,,,,,,,,,,,To Do,07/Feb/26 9:37 PM
+Сторінка позаду поп-апу “Відділення” прокручується.,OX-1,10080,Bug,To Do,OX,Oxfordmedical,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Medium,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,07/Feb/26 9:10 PM,07/Feb/26 10:05 PM,07/Feb/26 10:04 PM,,07/Feb/26 12:00 AM,0,"Після відкриття модального вікна користувач може скролити основну сторінку, що порушує UX модального інтерфейсу.
+
+STR:
+
+# Відкрити сайт Oxford Medical [https://oxford-med.com.ua/ua/|https://oxford-med.com.ua/ua/|smart-link] 
+# Відкрити модальне вікно “Відділення”
+# Спробувати прокрутити сторінку позаду модального вікна
+
+AR:
+
+Фонова сторінка прокручується під модальним вікном.
+
+ER:
+
+Прокрутка фонової сторінки повинна бути заблокована при відкритому модальному вікні.","Windows 10, Chrome, Desktop
+URL: сайт Oxford Medical
+
+[https://oxford-med.com.ua/ua/|https://oxford-med.com.ua/ua/|smart-link] ",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,07/Feb/26 9:10 PM;e4457d18-b369-48c9-923a-997c53c725c8;Приватна клініка Оксфорд Медікал - медичні послуги в Києві в Oxford Medical - Google Chrome 2026-02-07 21-03-41.mp4;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10081,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@2b107c64,,,,,,,,,,,,,,,,0|i0003b:,,,,,,,,,,,,,,,,To Do,07/Feb/26 9:10 PM
+Enlarged pizza image cannot be closed on the menu page,SF1-3,10047,Bug,To Do,SF1,Safaripizza1,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Lowest,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,06/Feb/26 11:16 PM,06/Feb/26 11:16 PM,,,06/Feb/26 12:00 AM,0,"h3. Description
+
+When a user clicks on a pizza image on the menu page, the image opens in enlarged view.
+However, there is no visible close button or clear way to return to the previous page.
+
+This blocks navigation and negatively affects user experience.
+
+*STR:*
+
+# Open the website in a browser
+# Navigate to [https://www.safaripica.lv/index.php/ru/menu|https://www.safaripica.lv/index.php/ru/menu|smart-link] 
+# Click on any pizza image [https://www.safaripica.lv/images/picas/vezuvio.png|https://www.safaripica.lv/images/picas/vezuvio.png]
+# Try to close the enlarged image
+
+*AR:*
+
+The enlarged image opens, but there is no clear way to close it or return to the menu.
+
+*ER:*
+
+The enlarged image should have a visible close button or allow closing by clicking outside the image or pressing ESC.","*Device:* Desktop computer
+*OS:* Windows
+*Browser:* Chrome
+*URL:*[https://www.safaripica.lv/index.php/ru/menu|https://www.safaripica.lv/index.php/ru/menu|smart-link] 
+
+[https://www.safaripica.lv/images/picas/vezuvio.png|https://www.safaripica.lv/images/picas/vezuvio.png]",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,06/Feb/26 11:12 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-06 230905.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10046,06/Feb/26 11:16 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-06 230952.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10047,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@43aca8ee,,,,,,,,,,,,,,,,0|i00033:,,,,,,,,,,,,,,,,To Do,06/Feb/26 11:16 PM
+Text overlaps and becomes unreadable on the page,SF1-2,10046,Bug,To Do,SF1,Safaripizza1,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Medium,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,06/Feb/26 11:05 PM,06/Feb/26 11:05 PM,06/Feb/26 11:05 PM,,06/Feb/26 12:00 AM,0,"h4. Description
+
+On the webpage, some text elements overlap each other, making the content partially unreadable.
+This affects usability because users cannot clearly read the information
+
+*STR:*
+
+# Open the website in a desktop browser
+# Navigate to [https://www.safaripica.lv/index.php/ru/delivery|https://www.safaripica.lv/index.php/ru/delivery|smart-link] 
+# Observe the text area where elements overlap
+
+*AR:*
+
+Text overlaps and cannot be read properly.
+
+*ER:*
+
+Text should be properly spaced and fully readable.","*Device:* Desktop
+*OS:* Windows
+*Browser:* Chrome
+*URL:* [https://www.safaripica.lv/index.php/ru/delivery|https://www.safaripica.lv/index.php/ru/delivery|smart-link] ",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,06/Feb/26 11:03 PM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-02-06 230317.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10043,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@75741092,,,,,,,,,,,,,,,,0|i0002v:,,,,,,,,,,,,,,,,To Do,06/Feb/26 11:05 PM
+Text is too small and unreadable on mobile device on Delivery page,SF1-1,10045,Bug,To Do,SF1,Safaripizza1,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Medium,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,06/Feb/26 10:45 PM,06/Feb/26 10:45 PM,06/Feb/26 11:50 PM,,,0,"On the mobile version of the page
+ [https://www.safaripica.lv/index.php/ru/menu|https://www.safaripica.lv/index.php/ru/menu|smart-link] 
+
+the text size is extremely small and difficult to read.
+Even on a large screen device (iPhone Pro Max), the user cannot comfortably read contact information or delivery details.                                                                                                                  This causes poor usability and accessibility issues for mobile users.
+
+*STR:*
+
+# Open the website in a desktop browser
+# Navigate [https://www.safaripica.lv/index.php/ru/menu|https://www.safaripica.lv/index.php/ru/menu|smart-link]
+# Observe the text block in the content area
+
+*AR:*
+
+Text overlaps with other text and becomes difficult or impossible to read.
+
+*ER:*
+
+Text elements should be properly spaced and fully readable without overlapping.","*Device:* Mobile phone (iPhone Pro Max)
+*OS:* iOS
+*Browser:* Safari
+*URL:*
+[https://www.safaripica.lv/index.php/lv/delivery|https://www.safaripica.lv/index.php/lv/delivery|smart-link] ",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,06/Feb/26 10:44 PM;e4457d18-b369-48c9-923a-997c53c725c8;photo_2026-02-06_22-41-57.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10041,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@228ea03a,,,,,,,,,,,,,,,,0|i0002n:,,,06/Feb/26 12:00 AM,,,,,,,,,,,,,To Do,06/Feb/26 10:45 PM
+Typo found in Privacy Policy text,DOS-4,10011,Bug,To Do,DOS,DEMO Online store,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Highest,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,23/Jan/26 1:19 PM,23/Jan/26 1:24 PM,23/Jan/26 1:23 PM,,,0,"STP:
+
+# Open [www/DEMOonlinestore.com]
+# Scroll down to the footer
+# Click on the “Privacy Policy” link
+# Review the text of the Privacy Policy
+
+AR:
+
+An orthographic (spelling) error is present in the Privacy Policy text.
+
+ER:The Privacy Policy text should not contain any spelling or grammatical errors.
+
+{color:#ff5630}*Severity - Minor / Priority - Highest*{color}",,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@4e5fbde5,,,,,,,,,,,,,,,,0|i00027:,,,,,,,,,,,,,,,,To Do,23/Jan/26 1:19 PM
+Typo in button text on homepage,DOS-3,10010,Bug,To Do,DOS,DEMO Online store,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Highest,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,23/Jan/26 1:13 PM,23/Jan/26 1:23 PM,23/Jan/26 1:22 PM,,,0,"STP:
+
+# Open [www.DEMOonlinestore.com]
+# Locate the main action button on the page
+
+AR:
+
+The button text contains an orthographic (spelling) error.
+
+ER:
+
+The button text should be spelled correctly according to language rules.
+
+{color:#ff5630}*Severity - Minor / Priority - Highest*{color}",,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@66840b16,,,,,,,,,,,,,,,,0|i0001z:,,,,,,,,,,,,,,,,To Do,23/Jan/26 1:13 PM
+Admin cannot export financial reports for previous period,DOS-2,10009,Bug,To Do,DOS,DEMO Online store,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Low,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,23/Jan/26 1:05 PM,23/Jan/26 1:22 PM,23/Jan/26 1:21 PM,,,0,"STP:
+
+# Open [www/DEMOonlinestore/com] 
+# Log in to the admin panel [passvord: admin123123]
+# Navigate to the “Financial Reports” section
+# Select a previous reporting period
+# Click on “Export report” button
+
+AR:
+
+The financial report for the selected period is not exported.
+
+ER:
+
+The system should successfully export the financial report for the selected period.
+
+
+
+{color:#ff5630}*Severity - critical / Priority - low*{color}",,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@59ecde41,,,,,,,,,,,,,,,,0|i0001r:,,,,,,,,,,,,,,,,To Do,23/Jan/26 1:05 PM
+Admin cannot generate supplier reports because reporting page does not open,DOS-1,10008,Bug,To Do,DOS,DEMO Online store,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Low,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,23/Jan/26 12:57 PM,23/Jan/26 1:21 PM,23/Jan/26 1:21 PM,,,0,"STP:
+
+# Open: [www/DEMOonlinestore/com] 
+# Log in to the admin panel of the online store [password: admin123123]
+# Navigate to the “Reports” section
+# Try to open the supplier reports page
+
+AR:
+
+The supplier reports page does not open.
+
+
+
+ER:
+
+The supplier reports page opens and allow the administrator to generate reports for suppliers.
+
+
+
+{color:#ff5630}*Severity - critical / Priority - low*{color}",,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@5717e497,,,,,,,,,,,,,,,,0|i0001j:,,,,,,,,,,,,,,,,To Do,23/Jan/26 12:57 PM
+Exclamation mark has different coulor than the text,KEY-3,10007,Bug,To Do,KEY,solopaalona1,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Lowest,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,23/Jan/26 11:15 AM,23/Jan/26 11:15 AM,06/Feb/26 10:34 PM,,,0,"*STR:*
+
+# Open [https://www.headhunterhairstyling.com/|https://www.headhunterhairstyling.com/|smart-link]
+# Scrol down to the section containing the text “{color:#36b37e}Meet our  stylists{color}!”
+# Observthe coulor of the text and the exclamation mark
+
+*AR:*
+
+Exclamation mark has different coulor than the text
+
+*ER:*
+
+Exclamation mark should have the same color as the surrounding text.","h6. OS: Windows
+
+h6. Browser Google Chrome 120.x (64 - bit)",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,23/Jan/26 11:15 AM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-01-23 111432.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10007,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@29806b39,,,,,,,,,,,,,,,,0|i0001b:,,,,,,,,,,,,,,,,To Do,23/Jan/26 11:15 AM
+Clicking on stylist photo redirect user external Wix.com website,KEY-2,10006,Bug,To Do,KEY,solopaalona1,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Medium,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,23/Jan/26 10:55 AM,23/Jan/26 11:17 AM,06/Feb/26 10:59 PM,,,0,"*STR:*
+
+# Open [https://www.headhunterhairstyling.com/stylists|https://www.headhunterhairstyling.com/stylists|smart-link] 
+# Hover over a stylist photo
+# Click on any stylist photo
+
+*AR:*
+
+User is redirected to an external website ( [Wix.com|http://Wix.com] )
+
+*ER:*
+
+licking on a stylist photo should:
+
+* open a large version of photo, or
+* open a stylist profile/details page, or
+* have no action if the photo is not intended.
+
+
+
+User should not be redirected to an unrelsted","OS: Windows 10
+
+Browser: Google Chrome; Edge.",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,23/Jan/26 10:55 AM;e4457d18-b369-48c9-923a-997c53c725c8;Headhunter Hairstyling _ Stylists - Google Chrome 2026-01-23 10-54-39.mp4;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10005,,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@315a1e06,,,,,,,,,,,,,,,,0|i00013:,,,,,,,,,,,,,,,"23/Jan/26 11:17 AM;712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c;{color:#ff5630}Redirecting users to {color}[{color:#ff5630}+Wix.com+{color}|http://wix.com/]{color:#ff5630}  is unexpected and breaks user experience,{color}
+{color:#ff5630}as users expect interaction with stylist-related content.{color}",To Do,23/Jan/26 10:55 AM
+Email link in footer is not clickable on desktop,KEY-1,10005,Bug,To Do,KEY,solopaalona1,software,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,Medium,,,,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,23/Jan/26 10:27 AM,23/Jan/26 10:27 AM,23/Jan/26 1:14 PM,,,0,"*STR:*
+
+# Open [https://www.headhunterhairstyling.com/|https://www.headhunterhairstyling.com/|smart-link] 
+# Scrol down tothe footer section
+# Click on the email sdress
+
+*AR:*
+
+# The email adress appesrs clickable 
+# Clicking the email adress does not trigger any action
+
+*ER:*
+
+Clicking the email adress opens the default email client or redirect the user to a contact page","h6. OS: Windows
+
+h6. Browser Google Chrome 120.x (64 - bit)",Alona Solopa,712020:53b65d23-23df-4e76-be2a-8b1e7d5d8e3c,,,,,,,,,"23/Jan/26 10:26 AM;e4457d18-b369-48c9-923a-997c53c725c8;Headhunter Hairstyling _ Pensacola, FL - Google Chrome 2026-01-23 10-24-10.mp4;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10003",23/Jan/26 10:26 AM;e4457d18-b369-48c9-923a-997c53c725c8;Снимок экрана 2026-01-23 102607.jpg;https://alonasolopa.atlassian.net/rest/api/3/attachment/content/10002,,,,,com.atlassian.servicedesk.plugins.approvals.internal.customfield.ApprovalsCFValue@7b2aae79,,,,,,,,,,,,,,,,0|i0000v:,,,23/Jan/26 12:00 AM,,,,,,,,,,,,,To Do,23/Jan/26 10:27 AM
